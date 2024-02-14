@@ -52,6 +52,11 @@ Endpoint: /api/signUp
 Method: POST
 Description: Registers a new user by accepting a User object in the request body. The UserService is responsible for user registration, and the response indicates the success or failure of the registration process.
 
+![image](https://github.com/ankitSarwar/Xindus_Assignment_Wishlist/assets/111841677/be8911a6-9302-4389-902c-9f0fe7b55028)
+
+
+<br>
+
 ### User Login (/api/logIn):
 Endpoint: /api/logIn
 Method: POST
@@ -63,12 +68,23 @@ Description: Handles user login by authenticating user credentials. If the authe
   "password": "123"
 }
 ```
+* copy this Token and use this token to Authentication for next APIs.
+![image](https://github.com/ankitSarwar/Xindus_Assignment_Wishlist/assets/111841677/c679e6b8-c330-4d80-a86b-afd25334c684)
+
+<br>
+
 
 ### Get User Wishlist (/api/wishlists/{username}):
 Endpoint: /api/wishlists/{username}
 Method: GET
 Description: Retrieves the wishlist items for a specific user. The UserService is used to validate the user's access by checking the token. The response contains a list of WishlistItemResponseDTO objects with essential details.
 > http://localhost:8080/api/wishlists/abhi?token={token}
+
+![image](https://github.com/ankitSarwar/Xindus_Assignment_Wishlist/assets/111841677/eca30750-1c1d-4671-82fb-ed925f6cb62b)
+
+
+<br>
+
 
 ### Create Wishlist Item (/api/wishlists):
 Endpoint: /api/wishlists
@@ -82,12 +98,18 @@ Description: Creates a new wishlist item by accepting a WishlistItem object in t
 }
 ```
 
+![Screenshot (1814)](https://github.com/ankitSarwar/Xindus_Assignment_Wishlist/assets/111841677/203d01e2-cd43-42e5-9dfc-10204989f737)
+
+<br>
+
 ### Delete Wishlist Item (/api/wishlists/{id}):
 Endpoint: /api/wishlists/{id}
 Method: DELETE
 Description: Deletes a wishlist item based on the provided item ID. The user's access is verified using the JWT token. If the user has the correct permissions, 
 the item is deleted, and a success message is returned.
 > http://localhost:8080/api/wishlists/3?token={token}
+
+![Screenshot (1816)](https://github.com/ankitSarwar/Xindus_Assignment_Wishlist/assets/111841677/6c72905c-0fe5-4527-a6af-1f50909f2d9e)
 
 
 
